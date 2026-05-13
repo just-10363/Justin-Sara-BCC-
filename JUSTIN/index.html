@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binalbagan Catholic College | BCC</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .typewriter-cursor::after {
+            content: '|';
+            animation: blink 0.7s step-end infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div><i class="fas fa-clock"></i> School Hours: Mon - Fri 8:00 AM - 5:00 PM</div>
+        <div id="current-date">May 9, 2026</div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-img"><i class="fas fa-graduation-cap"></i></div>
+                <span>BCC</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Programs</a></li>
+                <li><a href="#teachers">Faculty</a></li>
+                <li class="nav-dropdown">
+                    <a href="#departments" class="nav-dropdown-toggle">Departments <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#departments"><i class="fas fa-th-list"></i> Overview</a></li>
+                        <li><a href="#dept-details"><i class="fas fa-search"></i> Explore</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#message" class="btn-nav">Send a Message</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div id="particles-container"></div>
+        <div class="hero-content parallax-medium">
+            <h1 id="typewriter-title" class="typewriter-cursor"></h1>
+            <p>Providing quality Catholic education that forms individuals of character, competence, and compassion.</p>
+            <div class="cta-btns" id="cta-btns" style="opacity:0; transform:translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease;">
+                <a href="#contact" class="btn btn-enroll">Enroll Now</a>
+                <a href="#about" class="btn btn-learn">Learn More</a>
+            </div>
+        </div>
+        <!-- Stats Section -->
+        <div id="stats" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <span class="stat-number" data-target="3500">0</span>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span class="stat-number" data-target="120">0</span>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-number" data-target="60">0</span>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-trophy"></i>
+                    <span class="stat-number" data-target="25">0</span>
+                    <p>Awards & Recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" height="60">
+            <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#ffffff"/>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <div class="section-title slide-up">
+            <h2>About Our Institution</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-grid">
+            <div class="card scale-in">
+                <i class="fas fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>A Catholic educational institution run by the Presentation Sisters of the Blessed Virgin Mary in the Philippines. Inspired by the mission of Christ and the charism of Venerable Nano Nagle that upholds Catholic ideals and provides quality, holistic and transformative education to 21st century learners.</p>
+            </div>
+            <div class="card scale-in">
+                <i class="fas fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>Christ-centered advocates of excellence, social justice, stewardship and societal transformation in a rapidly changing world.</p>
+            </div>
+            <div class="card scale-in">
+                <i class="fas fa-heart"></i>
+                <h3>Core Values</h3>
+                <p>Faith, Service, Integrity, and Excellence in everything we do.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="fade-in">
+        <div class="section-title slide-up">
+            <h2>Academic Programs</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="course-grid">
+            <div class="course-card rotate-in">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Information Technology</h3>
+                <p>Develop skills in software development, networking, cybersecurity, and database management to thrive in the digital world.</p>
+            </div>
+            <div class="course-card rotate-in">
+                <i class="fas fa-chart-line"></i>
+                <h3>Business Administration</h3>
+                <p>Learn the fundamentals of management, marketing, finance, and entrepreneurship to lead organizations effectively.</p>
+            </div>
+            <div class="course-card rotate-in">
+                <i class="fas fa-apple-alt"></i>
+                <h3>Education</h3>
+                <p>Shape the next generation through a program focused on teaching strategies, child development, and values-based learning.</p>
+            </div>
+            <div class="course-card rotate-in">
+                <i class="fas fa-utensils"></i>
+                <h3>Hospitality Management</h3>
+                <p>Gain expertise in hotel operations, food service, tourism, and event management for a career in the global hospitality industry.</p>
+            </div>
+            <div class="course-card rotate-in">
+                <i class="fas fa-gavel"></i>
+                <h3>Criminology</h3>
+                <p>Study criminal justice, law enforcement, forensic science, and public safety to serve and protect the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section id="teachers" class="fade-in">
+        <div class="teacher-layout">
+            <div class="teacher-left slide-left">
+                <h2>Meet Our Faculty</h2>
+                <div class="underline"></div>
+                <p>Our dedicated faculty members are experts in their respective fields, committed to providing quality education and guiding students toward academic and personal excellence.</p>
+                <ul class="teacher-highlights">
+                    <li><i class="fas fa-check-circle"></i> Highly qualified educators</li>
+                    <li><i class="fas fa-check-circle"></i> Industry experience</li>
+                    <li><i class="fas fa-check-circle"></i> Faith-based mentorship</li>
+                    <li><i class="fas fa-check-circle"></i> Continuous professional development</li>
+                </ul>
+            </div>
+            <div class="teacher-scroll-right">
+                <div class="teacher-grid">
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=1" alt="Teacher" class="teacher-img">
+                        <h4>Dr. Jane Doe</h4>
+                        <p><strong>College Dean</strong></p>
+                        <p class="teacher-short">Expert in Educational Management with 20 years of experience.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> PhD in Educational Leadership</p>
+                            <p><strong>Specialization:</strong> Curriculum Development</p>
+                            <p><strong>Years of Experience:</strong> 20+</p>
+                            <p><strong>Awards:</strong> Outstanding Educator Award 2023</p>
+                        </div>
+                    </div>
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=2" alt="Teacher" class="teacher-img">
+                        <h4>Prof. John Smith</h4>
+                        <p><strong>IT Department Head</strong></p>
+                        <p class="teacher-short">Certified Cloud Architect and Lead Programmer.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> MS in Computer Science</p>
+                            <p><strong>Specialization:</strong> Cloud Computing & Cybersecurity</p>
+                            <p><strong>Years of Experience:</strong> 15+</p>
+                            <p><strong>Certifications:</strong> AWS, Azure, Google Cloud</p>
+                        </div>
+                    </div>
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=3" alt="Teacher" class="teacher-img">
+                        <h4>Sr. Maria Clara</h4>
+                        <p><strong>Values Coordinator</strong></p>
+                        <p class="teacher-short">Dedicated to spiritual formation and student guidance.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> MA in Theology</p>
+                            <p><strong>Specialization:</strong> Spiritual Formation</p>
+                            <p><strong>Years of Experience:</strong> 18+</p>
+                            <p><strong>Ministry:</strong> Campus Spiritual Director</p>
+                        </div>
+                    </div>
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=4" alt="Teacher" class="teacher-img">
+                        <h4>Prof. Ana Reyes</h4>
+                        <p><strong>Business Administration Head</strong></p>
+                        <p class="teacher-short">MBA graduate with expertise in finance and entrepreneurship.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> MBA in Business Administration</p>
+                            <p><strong>Specialization:</strong> Finance & Marketing</p>
+                            <p><strong>Years of Experience:</strong> 12+</p>
+                            <p><strong>Awards:</strong> Excellence in Teaching 2022</p>
+                        </div>
+                    </div>
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=5" alt="Teacher" class="teacher-img">
+                        <h4>Dr. Ramon Santos</h4>
+                        <p><strong>Criminology Department Head</strong></p>
+                        <p class="teacher-short">Former law enforcement officer with 15 years of field experience.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> PhD in Criminology</p>
+                            <p><strong>Specialization:</strong> Criminal Justice & Forensics</p>
+                            <p><strong>Years of Experience:</strong> 15+</p>
+                            <p><strong>Certifications:</strong> Licensed Criminologist</p>
+                        </div>
+                    </div>
+                    <div class="teacher-profile scale-in">
+                        <img src="https://i.pravatar.cc/150?u=6" alt="Teacher" class="teacher-img">
+                        <h4>Prof. Liza Fernandez</h4>
+                        <p><strong>Hospitality Management Head</strong></p>
+                        <p class="teacher-short">International hotel management professional and culinary arts expert.</p>
+                        <div class="teacher-details">
+                            <p><strong>Education:</strong> MS in Hospitality Management</p>
+                            <p><strong>Specialization:</strong> Hotel Operations & Culinary Arts</p>
+                            <p><strong>Years of Experience:</strong> 14+</p>
+                            <p><strong>Awards:</strong> Hospitality Excellence Award 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="fade-in">
+        <div class="section-title slide-up">
+            <h2>Our Departments</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="dept-list">
+            <div class="dept-item scale-in"><i class="fas fa-university"></i> College Department</div>
+            <div class="dept-item scale-in"><i class="fas fa-user-graduate"></i> Senior High School</div>
+            <div class="dept-item scale-in"><i class="fas fa-school"></i> Junior High School</div>
+            <div class="dept-item scale-in"><i class="fas fa-child"></i> Elementary Department</div>
+        </div>
+    </section>
+
+    <!-- Department Details Section -->
+    <section id="dept-details" class="fade-in">
+        <div class="dept-details-layout">
+            <div class="dept-details-left slide-left">
+                <h2>Explore Our Departments</h2>
+                <div class="underline"></div>
+                <p>Binalbagan Catholic College offers a wide range of academic departments designed to nurture every learner — from elementary to college level. Discover the department that fits your goals and passion.</p>
+                <ul class="dept-highlights">
+                    <li><i class="fas fa-check-circle"></i> World-class faculty</li>
+                    <li><i class="fas fa-check-circle"></i> Faith-based curriculum</li>
+                    <li><i class="fas fa-check-circle"></i> Modern facilities</li>
+                    <li><i class="fas fa-check-circle"></i> Holistic student development</li>
+                </ul>
+            </div>
+            <div class="dept-details-right">
+
+                <div class="dept-detail-card slide-up">
+                    <div class="dept-detail-header">
+                        <i class="fas fa-university"></i>
+                        <h3>College Department</h3>
+                    </div>
+                    <div class="dept-detail-body">
+                        <p>Our College Department offers bachelor's degree programs designed to equip students with professional skills and academic excellence.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Bachelor of Science in Information Technology</li>
+                            <li><i class="fas fa-check-circle"></i> Bachelor of Science in Business Administration</li>
+                            <li><i class="fas fa-check-circle"></i> Bachelor of Science in Criminology</li>
+                            <li><i class="fas fa-check-circle"></i> Bachelor of Science in Hospitality Management</li>
+                            <li><i class="fas fa-check-circle"></i> Bachelor of Elementary Education</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dept-detail-card slide-up">
+                    <div class="dept-detail-header">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Senior High School</h3>
+                    </div>
+                    <div class="dept-detail-body">
+                        <p>Senior High School prepares students for college and career through specialized tracks aligned with their interests and goals.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Academic Track (STEM, ABM, HUMSS)</li>
+                            <li><i class="fas fa-check-circle"></i> Technical-Vocational-Livelihood Track</li>
+                            <li><i class="fas fa-check-circle"></i> Sports Track</li>
+                            <li><i class="fas fa-check-circle"></i> Arts and Design Track</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dept-detail-card slide-up">
+                    <div class="dept-detail-header">
+                        <i class="fas fa-school"></i>
+                        <h3>Junior High School</h3>
+                    </div>
+                    <div class="dept-detail-body">
+                        <p>Junior High School (Grades 7–10) builds a strong academic foundation with values formation and holistic development.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Core Subjects (Math, Science, English, Filipino)</li>
+                            <li><i class="fas fa-check-circle"></i> Technology and Livelihood Education</li>
+                            <li><i class="fas fa-check-circle"></i> MAPEH (Music, Arts, PE, Health)</li>
+                            <li><i class="fas fa-check-circle"></i> Values Education & Christian Living</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dept-detail-card slide-up">
+                    <div class="dept-detail-header">
+                        <i class="fas fa-child"></i>
+                        <h3>Elementary Department</h3>
+                    </div>
+                    <div class="dept-detail-body">
+                        <p>The Elementary Department (Grades 1–6) nurtures young learners through a child-centered, faith-based curriculum.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Language Arts & Literacy</li>
+                            <li><i class="fas fa-check-circle"></i> Mathematics & Science</li>
+                            <li><i class="fas fa-check-circle"></i> Araling Panlipunan & Filipino</li>
+                            <li><i class="fas fa-check-circle"></i> Christian Living & Values Formation</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Message Section -->
+    <section id="contact" class="fade-in">
+        <div class="section-title slide-up">
+            <h2>Contact Us</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info slide-left">
+                <h3>Get In Touch</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Binalbagan, Negros Occidental, Philippines</p>
+                <p><i class="fas fa-phone"></i> (034) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@bcc.edu.ph</p>
+                <div class="map-box">
+                    <i class="fas fa-map-marked-alt"></i> [ Google Map Placeholder ]
+                </div>
+            </div>
+            <div id="message" class="contact-form-container slide-right">
+                <h3>Send a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <select id="course" required>
+                        <option value="" disabled selected>Select Course to Enroll</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Business Administration">Business Administration</option>
+                        <option value="Education">Education</option>
+                        <option value="Hospitality Management">Hospitality Management</option>
+                        <option value="Criminology">Criminology</option>
+                    </select>
+                    <textarea id="msg" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn-submit">Submit Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Binalbagan Catholic College. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Binalbagan Catholic College - Excellence in Catholic Education</p>
+    </footer>
+
+    <script>
+        // 1. Dynamic Date Display
+        function updateDate() {
+            const dateElement = document.getElementById('current-date');
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const today = new Date();
+            dateElement.textContent = today.toLocaleDateString('en-US', options);
+        }
+        updateDate();
+
+        // 2. Form Validation
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const course = document.getElementById('course').value;
+            const msg = document.getElementById('msg').value;
+
+            if(name && email && subject && course && msg) {
+                alert(`Thank you, ${name}! Your enrollment inquiry for "${course}" has been sent successfully.`);
+                contactForm.reset();
+            } else {
+                alert("Please fill in all fields.");
+            }
+        });
+
+        // 3. Particle Effects
+        function createParticles() {
+            const container = document.getElementById('particles-container');
+            if (!container) return;
+
+            const particleCount = 50;
+            const colors = ['particle-gold', 'particle-white', 'particle-maroon'];
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = `particle ${colors[Math.floor(Math.random() * colors.length)]}`;
+                
+                // Random size
+                const size = Math.random() * 6 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation duration
+                const duration = Math.random() * 10 + 10;
+                particle.style.animationDuration = `${duration}s`;
+                
+                // Random animation delay
+                particle.style.animationDelay = `${Math.random() * 10}s`;
+                
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // 4. Parallax Scrolling
+        function initParallax() {
+            const parallaxElements = document.querySelectorAll('.parallax-slow, .parallax-medium, .parallax-fast');
+            
+            window.addEventListener('scroll', () => {
+                const scrollY = window.pageYOffset;
+                
+                parallaxElements.forEach(element => {
+                    const speed = element.classList.contains('parallax-slow') ? 0.2 :
+                                  element.classList.contains('parallax-medium') ? 0.4 : 0.6;
+                    const yPos = -(scrollY * speed);
+                    element.style.transform = `translateY(${yPos}px)`;
+                });
+            });
+        }
+        initParallax();
+
+        // 5. Enhanced Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('appear');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-up, .slide-left, .slide-right, .scale-in, .rotate-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // 7. Typewriter Effect
+        function typeWriter(elementId, text, speed, onDone) {
+            const el = document.getElementById(elementId);
+            let i = 0, current = '';
+            el.classList.add('typewriter-cursor');
+            const interval = setInterval(() => {
+                current += text[i++];
+                el.textContent = current;
+                if (i === text.length) {
+                    clearInterval(interval);
+                    el.classList.remove('typewriter-cursor');
+                    if (onDone) onDone();
+                }
+            }, speed);
+        }
+        typeWriter('typewriter-title', 'Welcome to Binalbagan Catholic College', 80, () => {
+            const btns = document.getElementById('cta-btns');
+            btns.style.opacity = '1';
+            btns.style.transform = 'translateY(0)';
+        });
+
+        // 8. Stats Counter
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = +entry.target.dataset.target;
+                    let count = 0;
+                    const step = Math.ceil(target / 80);
+                    const timer = setInterval(() => {
+                        count = Math.min(count + step, target);
+                        entry.target.textContent = count.toLocaleString() + '+';
+                        if (count >= target) clearInterval(timer);
+                    }, 20);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        statNumbers.forEach(n => statsObserver.observe(n));
+
+        // 9. Back to Top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 400);
+        });
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // 10. Scroll Progress Bar
+        const progressBar = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', () => {
+            const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            progressBar.style.width = pct + '%';
+        });
+
+        // 11. Active Nav Highlight
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+            });
+            navLinks.forEach(a => {
+                a.classList.remove('active-nav');
+                if (a.getAttribute('href') === '#' + current) a.classList.add('active-nav');
+            });
+        });
+
+        // 12. Cursor Glow
+        const glow = document.getElementById('cursor-glow');
+        document.addEventListener('mousemove', e => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+
+        // 13. Floating rings in hero
+        const hero = document.getElementById('home');
+        [200, 350, 500].forEach((size, i) => {
+            const ring = document.createElement('div');
+            ring.className = 'ring';
+            ring.style.cssText = `width:${size}px;height:${size}px;left:50%;top:50%;animation-delay:${i * 1.3}s;animation-duration:4s;`;
+            hero.appendChild(ring);
+        });
+
+        // 6. Smooth Scrolling
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if(this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
